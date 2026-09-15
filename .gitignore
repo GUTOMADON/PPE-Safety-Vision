@@ -1,0 +1,65 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Environment variables
+.env
+*.env.local
+
+# Datasets (large, download via scripts/download_dataset.py)
+backend/data/raw/
+backend/data/processed/
+backend/data/*.zip
+backend/data/*.cache
+
+# Trained weights (large binary files, see backend/models/WEIGHTS.md)
+backend/models/*.pt
+!backend/models/.gitkeep
+
+# Training / evaluation run outputs
+backend/runs/
+backend/scripts/runs/
+*.onnx
+
+# Alerts and logged violations (runtime generated)
+backend/alerts/*.jpg
+backend/alerts/*.png
+!backend/alerts/.gitkeep
+backend/storage/*.db
+!backend/storage/.gitkeep
+
+# Uploaded media (runtime generated)
+backend/uploads/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+frontend/.streamlit/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
